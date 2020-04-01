@@ -25,7 +25,7 @@ class MyHashSet:
         for i in range(count):
             self.buckets[hash_value].remove(key)
 
-    def contains(self, key: int) -> bool:
+    def get(self, key: int) -> bool:
         """
         Returns true if this set contains the specified element
         """
