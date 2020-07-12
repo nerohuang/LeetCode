@@ -23,3 +23,5 @@ def fourSum(self, nums, target):
     results = []
     findNsum(0, len(nums)-1, target, 4, [], results)
     return results
+
+#用递归直到个数为2；
