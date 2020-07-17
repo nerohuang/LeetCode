@@ -8,6 +8,15 @@ https://leetcode.com/problems/subsets/solution/
 
 152. Maximum Product Subarray
 
+238. Product of Array Except Self(Med).py
+
+287. Find the Duplicate Number
+Approach 3: Floyd's Tortoise and Hare (Cycle Detection)
+
+442. Find All Duplicates in an Array(Med).py
+
+457. Circular Array Loop(Med).py
+
 746. Min Cost Climbing Stairs(Easy).py
 
 1217. Play with Chips(Easy).py
