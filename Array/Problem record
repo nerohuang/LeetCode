@@ -10,12 +10,21 @@ https://leetcode.com/problems/subsets/solution/
 
 238. Product of Array Except Self(Med).py
 
+
 287. Find the Duplicate Number
 Approach 3: Floyd's Tortoise and Hare (Cycle Detection)
+
+289. Game of Life(Med).py
 
 442. Find All Duplicates in an Array(Med).py
 
 457. Circular Array Loop(Med).py
+
+560. Subarray Sum Equals K(Med).py
+
+565. Array Nesting(Med).py
+
+
 
 746. Min Cost Climbing Stairs(Easy).py
 
