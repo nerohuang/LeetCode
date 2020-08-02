@@ -44,6 +44,19 @@ Greed
 
 746. Min Cost Climbing Stairs(Easy).py
 
+835. Image Overlap(Med).py
+
+870. Advantage Shuffle(Med).py
+
+907. Sum of Subarray Minimums(Med).py
+重点，用到栈！
+https://leetcode.com/problems/sum-of-subarray-minimums/discuss/170750/C%2B%2BJavaPython-Stack-Solution
+https://buptwc.com/2018/09/16/Leetcode-907-Sum-of-Subarray-Minimums/
+
+915. Partition Array into Disjoint Intervals(Med).py
+
+926. Flip String to Monotone Increasing(Med).py
+
 1217. Play with Chips(Easy).py
 
 1275. Find Winner on a Tic Tac Toe Game(Easy).py
