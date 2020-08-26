@@ -14,3 +14,7 @@
 235. Lowest Common Ancestor of a Binary Search Tree(Easy).py
 找节点，可以看看
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/
+
+Tree\538. Convert BST to Greater Tree(Easy).py
+
+认真学习self的用法还有递归
