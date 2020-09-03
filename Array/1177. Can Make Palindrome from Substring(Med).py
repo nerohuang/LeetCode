@@ -1,25 +1,25 @@
-class Solution:
-    def canMakePaliQueries(self, s: str, queries: List[List[int]]) -> List[bool]:
-        ans = []
-        oddCount = 0;
-        char = {};
-        for left, right, k in queries:
-            for charter in s[left:right + 1]:
-                if charter in char:
-                    char[charter] += 1;
-                else:
-                    char[charter] = 1;
-            for charter in char:
-                if char[charter] % 2 == 1:
-                    oddCount += 1;
-            if len(char) == 1 or int(oddCount / 2) <= k:
-                ans.append(True);
-            else:
-                ans.append(False);
-            char = {}
-            oddCount = 0;
-        return ans;
-
+#class Solution:
+#    def canMakePaliQueries(self, s: str, queries: List[List[int]]) -> List[bool]:
+#        ans = []
+#        oddCount = 0;
+#        char = {};
+#        for left, right, k in queries:
+#            for charter in s[left:right + 1]:
+#                if charter in char:
+#                    char[charter] += 1;
+#                else:
+#                    char[charter] = 1;
+#            for charter in char:
+#                if char[charter] % 2 == 1:
+#                    oddCount += 1;
+#            if len(char) == 1 or int(oddCount / 2) <= k:
+#                ans.append(True);
+#            else:
+#                ans.append(False);
+#            char = {}
+#            oddCount = 0;
+#        return ans;
+#
 
 #题思路：对于给定一个query = [left,right,k]，很容易能求出这个区间内每个字符出现的次数，
 #如果某个字符出现了偶数次，那说明不需要经过任何改变，这个字符就能组成回文。所以这里只需要
