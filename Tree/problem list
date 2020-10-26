@@ -24,3 +24,8 @@ Tree\606. Construct String from Binary Tree(Easy).py
 Tree\669. Trim a Binary Search Tree(Easy).py
 
 #重点是记住BST，左子叶 < 根 < 右子叶 就很好理解了。
+
+Tree\687. Longest Univalue Path(Easy).py
+#递归的处理
+
+
