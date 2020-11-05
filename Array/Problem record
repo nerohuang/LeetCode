@@ -130,7 +130,16 @@ heapq.heappush(heap, item)
 heapq.heappop(heap)
 弹出并返回 heap 的最小的元素，保持堆的不变性。如果堆为空，抛出 IndexError 。使用 heap[0] ，可以只访问最小的元素而不弹出它
 
+Array\1338. Reduce Array Size to The Half(Med).py
+dictionary的排序
+
 1351. Count Negative Numbers in a Sorted Matrix(Easy).py
+
+Array\1352. Product of the Last K Numbers(Med).py
+#用preproduct生成一串list，每输入一个数就和前一个数字相乘再append。
+如果输入的为0，那么初始化数组并第一个element为1.
+当输入的K大于数组长度的时候那么表示之前出现过0，那么和0相乘就是0。返回0。
+如果不是，那么输出最后一个element和倒数第K + 1个element相除。
 
 1365. How Many Numbers Are Smaller Than the Current Number(Easy).py
 
