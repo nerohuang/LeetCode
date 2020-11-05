@@ -1,2 +1,13 @@
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
+
+String\893. Groups of Special-Equivalent Strings(Easy).js
+思路:因为只能是奇数位和奇数位交换，偶数位和偶数位交换
+所以只要统计奇位上和偶位上的字母然后重新分别排序并重新组成一个string
+然后塞进set里面，就知道
+
+String\925. Long Pressed Name(Easy).js
+思路： 把字符串分为不同的block，比如leelee分为 
+[["l",1]["e",2]["l",1]["e",2]]
+然后两组分别对比，只要组数不一样绝对错，然后只要每一组相应的index的字母不一样错
+typed中某个block的输入次数少于name的也错。
