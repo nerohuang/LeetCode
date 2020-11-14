@@ -11,3 +11,6 @@ String\925. Long Pressed Name(Easy).js
 [["l",1]["e",2]["l",1]["e",2]]
 然后两组分别对比，只要组数不一样绝对错，然后只要每一组相应的index的字母不一样错
 typed中某个block的输入次数少于name的也错。
+
+String\1332. Remove Palindromic Subsequences(Easy).py
+脑筋急转弯
