@@ -14,3 +14,7 @@ typed中某个block的输入次数少于name的也错。
 
 String\1332. Remove Palindromic Subsequences(Easy).py
 脑筋急转弯
+
+String\1417. Reformat The String(Easy).py
+
+#zip和filter的用法
