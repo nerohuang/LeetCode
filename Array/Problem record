@@ -143,7 +143,13 @@ Array\1352. Product of the Last K Numbers(Med).py
 
 1365. How Many Numbers Are Smaller Than the Current Number(Easy).py
 
+Array\1366. Rank Teams by Votes(Med).py
+sorted和lambda的用法了！
+
 1380. Lucky Numbers in a Matrix(Easy)
+
+Array\1386. Cinema Seat Allocation(Med).py
+他妈试试把已知的思路反过来一下。
 
 Array\1423. Maximum Points You Can Obtain from Cards(Med).py
 思路：先按顺序求前K个的和，然后开始减去第K个加上第-1个，判断cur和pre哪个更大
