@@ -151,6 +151,9 @@ sorted和lambda的用法了！
 Array\1386. Cinema Seat Allocation(Med).py
 他妈试试把已知的思路反过来一下。
 
+Array\1395. Count Number of Teams(Med).py
+动态规划
+
 Array\1423. Maximum Points You Can Obtain from Cards(Med).py
 思路：先按顺序求前K个的和，然后开始减去第K个加上第-1个，判断cur和pre哪个更大
 然后继续，一直到轮完K次，就能得到最大的sum。贪心。
