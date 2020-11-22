@@ -1,6 +1,13 @@
 Tree\95. Unique Binary Search Trees II(Med).py
 **如何用一串数字构建出所有独特的BST
 
+Tree\96. Unique Binary Search Trees(Med).py
+**计算一串数字构建出所有独特BST到底有多少个
+https://www.youtube.com/watch?v=Ox0TenN3Zpg&ab_channel=NEETcode
+
+Tree\98. Validate Binary Search Tree(Med).py
+**验证BST
+
 101. Symmetric Tree(Easy).py
 
 104. Maximum Depth of Binary Tree(Easy).py
