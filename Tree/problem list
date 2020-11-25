@@ -12,6 +12,14 @@ Tree\98. Validate Binary Search Tree(Med).py
 
 104. Maximum Depth of Binary Tree(Easy).py
 
+Tree\105. Construct Binary Tree from Preorder and Inorder Traversal(Med).py
+Tree\106. Construct Binary Tree from Inorder and Postorder Traversal(Med).py
+**如何用preorder，inorderr和inorder，postorder构建出一颗完整的二叉树
+我做出来了，但是还是要注意一下。
+思路其实就是从preorder/postorder pop出一个root
+然后用这个root在inoder里面分成左右两组代表这个root的左子叶和右子叶。
+一直循环到pop空preorder/postorder位置。
+
 107. Binary Tree Level Order Traversal II(Med).py
 
 110. Balanced Binary Tree(Easy).py
