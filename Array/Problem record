@@ -160,3 +160,6 @@ Array\1423. Maximum Points You Can Obtain from Cards(Med).py
 
 Array\1424. Diagonal Traverse II(Med).py ****
 传统的对角线输出问题，配合defaultdict，一定要看。
+
+Array\1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit(Med).py
+sliding windows的问题
