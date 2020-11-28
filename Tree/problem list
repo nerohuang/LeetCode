@@ -26,6 +26,13 @@ Tree\106. Construct Binary Tree from Inorder and Postorder Traversal(Med).py
 
 111. Minimum Depth of Binary Tree(Easy).py
 
+Tree\114. Flatten Binary Tree to Linked List(Med).py
+用DFS做
+
+Tree\116. Populating Next Right Pointers in Each Node(Med).py
+Tree\117. Populating Next Right Pointers in Each Node II(Med).py
+BFS！！！！！！！！
+
 226. Invert Binary Tree(Easy).py
 镜像二叉树，要看
 
