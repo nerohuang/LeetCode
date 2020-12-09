@@ -1,6 +1,13 @@
 String\5. Longest Palindromic Substring(Med).py
 #最长substring回文
 
+String\6. ZigZag Conversion(Med).py
+#我他妈怎么想复杂了？？？？？？？？？？？
+
+String\8. String to Integer (atoi)(Med).py
+strip()函数
+怎么提取数字
+
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
 
