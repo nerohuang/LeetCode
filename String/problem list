@@ -8,6 +8,12 @@ String\8. String to Integer (atoi)(Med).py
 strip()函数
 怎么提取数字
 
+String\12. Integer to Roman(Med).py
+..把所有情况列出来完事
+
+String\17. Letter Combinations of a Phone Number(Med).py
+简单递归
+
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
 
