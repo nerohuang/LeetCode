@@ -17,6 +17,18 @@ String\17. Letter Combinations of a Phone Number(Med).py
 String\22. Generate Parentheses(Med).py
 #递归，backtrack
 
+String\93. Restore IP Addresses(Mewd).py
+DFS
+
+String\553. Optimal Division(Med).py
+数学题
+
+String\556. Next Greater Element III(Med).py
+数学题。。一定要记住方法
+
+
+
+
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
 
@@ -30,6 +42,20 @@ String\925. Long Pressed Name(Easy).js
 [["l",1]["e",2]["l",1]["e",2]]
 然后两组分别对比，只要组数不一样绝对错，然后只要每一组相应的index的字母不一样错
 typed中某个block的输入次数少于name的也错。
+
+String\1234. Replace the Substring for Balanced String(Med).py
+slide window
+
+String\1247. Minimum Swaps to Make Strings Equal(Med).py
+greedy
+
+String\1249. Minimum Remove to Make Valid Parentheses(Med).py
+
+String\1268. Search Suggestions System(Med).py
+二分法！
+
+String\1297. Maximum Number of Occurrences of a Substring(Med).py
+hmm，脑筋急转弯?
 
 String\1332. Remove Palindromic Subsequences(Easy).py
 脑筋急转弯

@@ -44,6 +44,27 @@ Tree\222. Count Complete Tree Nodes(Med).py
 找节点，可以看看
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/
 
+Tree\236. Lowest Common Ancestor of a Binary Tree(Med).py
+更快的做法
+
+Tree\337. House Robber III(Med).py
+DP
+
+Tree\437. Path Sum III(Med).py
+DFS
+
+Tree\449. Serialize and Deserialize BST(Med).py
+遍历BST，还原BST
+
+Tree\450. Delete Node in a BST(Med).py
+
+Tree\508. Most Frequent Subtree Sum(Med).py
+DFS, collections library
+
+Tree\513. Find Bottom Left Tree Value(Med).py
+Tree\515. Find Largest Value in Each Tree Row(Med).py
+BFS
+
 Tree\538. Convert BST to Greater Tree(Easy).py
 
 认真学习self的用法还有递归
@@ -59,12 +80,20 @@ Tree\606. Construct String from Binary Tree(Easy).py
 
 Tree\617. Merge Two Binary Trees(Easy).py
 
+Tree\623. Add One Row to Tree(Med).py
+#BFS, 在d深度添加整一层v
+
+Tree\652. Find Duplicate Subtrees(Med).py
+找相同结构，用dfs和defaultdic
+
 Tree\669. Trim a Binary Search Tree(Easy).py
 
 #重点是记住BST，左子叶 < 根 < 右子叶 就很好理解了。
 wwwwww'w'w'w'w'w
 Tree\687. Longest Univalue Path(Easy).py
 #递归的处理
+
+
 
 Tree\897. Increasing Order Search Tree(Easy).py
 构建树

@@ -1,15 +1,22 @@
+Array\15. 3Sum(Med).py
+拆分，一个数和2sum的结合。
+
 40. Combination Sum II(Med).py
 递归的演示！
+如何处理递归中数数组的问题new！
+防止重复new！
 
-78. Subsets(Mid):
+78. Subsets(Mid): 做是做出来了
 Backtracking,  Lexicographic (Binary Sorted) Subsets
 https://leetcode.com/problems/subsets/solution/
 
 79. Word Search(Mid).py
 
-120. Triangle
+120. Triangle **
+其实是个DP，有时候记得从后往前会简单很多。
 
 152. Maximum Product Subarray
+
 
 238. Product of Array Except Self(Med).py
 
@@ -161,11 +168,31 @@ Array\1423. Maximum Points You Can Obtain from Cards(Med).py
 Array\1424. Diagonal Traverse II(Med).py ****
 传统的对角线输出问题，配合defaultdict，一定要看。
 
+
 Array\1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit(Med).py
 sliding windows的问题
+
+Array\1471. The k Strongest Values in an Array(Med).py
+数学题
+
+Array\1482. Minimum Number of Days to Make m Bouquets(Med).py
+binary Search
+
+Array\1497. Check If Array Pairs Are Divisible by k(Med).py
+数学题
+
+Array\1503. Last Moment Before All Ants Fall Out of a Plank(Med).py
+
+Array\1509. Minimum Difference Between Largest and Smallest Value in Three Moves(Med).py
 
 Array\1524. Number of Sub-arrays With Odd Sum(Med).py
 数学题
 
 Array\1535. Find the Winner of an Array Game(Med).py
 想想怎么优化题
+
+Array\1552. Magnetic Force Between Two Balls(Med.)py
+binary search
+
+Array\1574. Shortest Subarray to be Removed to Make Array Sorted(Med).py
+two pointer

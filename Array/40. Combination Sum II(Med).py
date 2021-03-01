@@ -1,77 +1,41 @@
-#class Solution:
-#    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-#        def findSum(l ,r, target, n, result, results):
-#            if r - l + 1 < n or target < candidates[l] * n or target > candidates[r] * n:
-#                return;
-#            if n == 2:
-#                while l < r:
-#                    s = candidates[l] + candidates[r];
-#                    if s == target:
-#                        results.append(result + [candidates[l], candidates[r]]);
-#                        l += 1;
-#                        while l < r and candidates[l] == candidates[l - 1]:
-#                            l += 1;
-#                    elif s < target:
-#                        l += 1;
-#                    else:
-#                        r -= 1;
-#            else:
-#                for i in range(l, r + 1):
-#                    if i == l or (i > l and candidates[i - 1] != candidates[i]):
-#                        findSum(i + 1, r, target - candidates[i], n - 1, result + [candidates[i]], results);
-#
-#        candidates.sort();
-#        results = [];
-#        if target in candidates:
-#            results.append([target]);
-#        if len(candidates) == 2:
-#            if candidates[0] + candidates[1] == target:
-#                results.append([candidates[0], candidates[1]]);
-#        for i in range(2, len(candidates)):
-#            findSum(0, len(candidates)-1, target, i, [], results);
-#        return(results);
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        
+        ans = [];
+        candidates.sort();
 
-candidates = [2,3,6,7]
-target = 7
-#lut = [set() for i in range(target+1)]
-#lut[0] = {()}
-#candidates.sort()
-#for cand in candidates:
-#    for i in range(target, cand-1, -1):
-#        for ans in lut[i-cand]:
-#            lut[i].add(ans+(cand,))
-#print(lut[target])
+        def findSum(store, i, target):
+            if not target:
+                if store not in ans:
+                    ans.append(store);
+                return
 
+            
+            for j in range(i, len(candidates)):
+                #这一段很关键
+                #=====================
+                if j > i and candidates[j] == candidates[j - 1]:
+                    continue;
+                #========================
+                if target >= candidates[j]:
+                    findSum(store + [candidates[j]], j + 1, target - candidates[j]);
+                else:
+                    break;
+            return
+        
+        findSum([], 0, target);
+        return ans
 
-#class Solution:
-#    def combinationSum2(self, candidates, target):
-#        # Sorting is really helpful, se we can avoid over counting easily
-#
-#    
-#        def combine_sum_2(nums, start, path, result, target):
-#        # Base case: if the sum of the path satisfies the target, we will consider 
-#        # it as a solution, and stop there
-#            if not target:
-#                result.append(path)
-#                return
-#
-#            for i in range(start, len(nums)):
-#            # Very important here! We don't use `i > 0` because we always want 
-#            # to count the first element in this recursive step even if it is the same 
-#            # as one before. To avoid overcounting, we just ignore the duplicates
-#            # after the first element.
-#                if i > start and nums[i] == nums[i - 1]:
-#                    continue
-#            # If the current element is bigger than the assigned target, there is 
-#            # no need to keep searching, since all the numbers are positive
-#                if nums[i] > target:
-#                    break
-#            # We change the start to `i + 1` because one element only could
-#            # be used once
-#                combine_sum_2(nums, i + 1, path + [nums[i]], result, target - nums[i])
-#
-#
-#        candidates.sort()                      
-#        result = []
-#        combine_sum_2(candidates, 0, [], result, target)
-#        print(result);
+##思路
+# 正常递归思路，其实能想出来
+# 有两点要注意很重要：
+# 1. 不要用append，用append的话记得要pop
+# 2. 要加上 很关键这一段，这一段就是为了防止
+#    超时的。他的作用就是如果一前一后的数字
+#    是相同的，那么前一个里面成立的所有选项
+#    在后一个里面都不会成立或者已经成立过了。
+#    思考一下：
+#    candidates = [1,1,2,5,6,7,10], target = 8
+#    如果已经找到[1,1,6] [1, 7]
+#    那么为了防止重复，第二个1就应该直接过掉。因为
+#    第一个1已经把可能性找完了。

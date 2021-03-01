@@ -1,0 +1,37 @@
+class Solution:
+    def maxDistance(self, position: List[int], m: int) -> int:
+        position.sort();
+        
+        left, right = 1, position[-1] - position[0];
+        
+        def countBall(distance):
+            ball = 1;
+            curLoc = position[0];
+            for i in range(1, len(position)):
+                if position[i] - curLoc >= distance:
+                    ball += 1;
+                    curLoc = position[i];
+            return ball;
+        
+        
+        
+        while left <= right:
+            mid = (left + right) //2;
+            if countBall(mid) >= m:
+                left = mid + 1;
+            else:
+                right = mid - 1;
+        
+        return right;
+
+#思路:
+#用binary search做：
+#先把垃圾桶的位置从小到大排序，然后找出垃圾桶之间最大
+#的距离作为right, 最小间距1为left开始寻找。
+
+#先计算出中间值mid，然后带入函数countBall
+#countBall的作用是找出在这些垃圾桶里面以间距distance
+#放球最多可以放多少个，如果放入的球数大于需求m
+#那么距离可以继续加大，就是left = mid + 1;
+#如果小于m，那么就缩小，right = right - 1；
+#最后返回right，就是最大的间距可能性。

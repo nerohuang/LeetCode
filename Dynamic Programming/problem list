@@ -7,8 +7,37 @@ Dynamic Programming\139. Word Break(Med).py
 
 Dynamic Programming\198. House Robber(Easy).py
 
+Dynamic Programming\264. Ugly Number II(Med).py
+
+Dynamic Programming\279. Perfect Squares(Med).py
+
+Dynamic Programming\300. Longest Increasing Subsequence(Med).py
+有更快的做法
+
 Dynamic Programming\303. Range Sum Query - Immutable(Easy).py
 做出来了，但更快的方法是用presum
 
+Dynamic Programming\304. Range Sum Query 2D - Immutable(Med).py
+
+Dynamic Programming\309. Best Time to Buy and Sell Stock with Cooldown(Med).py
+
+Dynamic Programming\322. Coin Change(Med).py
+
+Dynamic Programming\338. Counting Bits(Med).py
+
+Dynamic Programming\343. Integer Break(Med).py\
+
+Dynamic Programming\357. Count Numbers with Unique Digits(Med).py
+脑子没转过来
+
+Dynamic Programming\368. Largest Divisible Subset(Med).py
+思路对了，实现出了问题。
+
 Dynamic Programming\392. Is Subsequence(Easy).py
 我都不知道为啥我会实现的这么复杂。
+
+Dynamic Programming\583. Delete Operation for Two Strings(Med).py
+最长公共子序列(longest Common Subsequence)
+
+Dynamic Programming\1025. Divisor Game(Easy).py
+数学题，但下次用DP做

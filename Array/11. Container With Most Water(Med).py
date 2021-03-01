@@ -11,19 +11,8 @@ class Solution:
                 r -= 1;
         return result;
 
-#class Solution:
-#    def maxArea(self, height: List[int]) -> int:
-#        i=0
-#        j=len(height)-1
-#        max_area=0
-#        while i<j:
-#            if height[i]<height[j]:
-#                area = (j-i)*height[i]
-#                i+=1
-#            else:
-#                area = (j-i)*height[j]
-#                j-=1
-#                
-#            max_area = max(max_area,area)
-#            
-#        return max_area
+# 思路 
+# 想法很简单，就是一左一右两个pointer
+# 然后每次用max来更新答案
+# 当左边指针长度大于右边的时候，右边加一
+# 反之亦然。
