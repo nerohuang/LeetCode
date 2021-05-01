@@ -86,13 +86,27 @@ Tree\623. Add One Row to Tree(Med).py
 Tree\652. Find Duplicate Subtrees(Med).py
 找相同结构，用dfs和defaultdic
 
+Tree\662. Maximum Width of Binary Tree(Med).py
+BFS找规律
+
+
 Tree\669. Trim a Binary Search Tree(Easy).py
 
 #重点是记住BST，左子叶 < 根 < 右子叶 就很好理解了。
-wwwwww'w'w'w'w'w
+
+
+Tree\684. Redundant Connection(Med).py
+DFS，还有一个并查集的做法 **
+https://zh.wikipedia.org/zh-cn/%E5%B9%B6%E6%9F%A5%E9%9B%86
+
 Tree\687. Longest Univalue Path(Easy).py
 #递归的处理
 
+Tree\863. All Nodes Distance K in Binary Tree(Med).py
+BFS 加上父节点
+
+Tree\865. Smallest Subtree with all the Deepest Nodes(Med).py
+DFS 
 
 
 Tree\897. Increasing Order Search Tree(Easy).py

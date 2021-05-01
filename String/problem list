@@ -20,14 +20,29 @@ String\22. Generate Parentheses(Med).py
 String\93. Restore IP Addresses(Mewd).py
 DFS
 
+String\165. Compare Version Numbers(Med).py
+脑瘫，脑抽了
+
+String\227. Basic Calculator II(Med).py
+用stack是没错了
+怎么实现没想到。
+
+
 String\553. Optimal Division(Med).py
 数学题
 
 String\556. Next Greater Element III(Med).py
 数学题。。一定要记住方法
 
+String\647. Palindromic Substrings(Med).py
+回文的方法！ 和第五题一样！ **
 
+String\767. Reorganize String(Med).py
+用heap** 第一次用到heap
+https://docs.python.org/zh-cn/3/library/heapq.html
 
+Tree\814. Binary Tree Pruning(Med).py
+递归，删除为0的node **
 
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
@@ -59,6 +74,10 @@ hmm，脑筋急转弯?
 
 String\1332. Remove Palindromic Subsequences(Easy).py
 脑筋急转弯
+
+String\1358. Number of Substrings Containing All Three Characters(Med).py
+sliding windows
+two pointer
 
 String\1417. Reformat The String(Easy).py
 

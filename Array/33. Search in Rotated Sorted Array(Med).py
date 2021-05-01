@@ -41,3 +41,14 @@ class Solution:
 #                    right = mid - 1
 #        
 #        return -1
+
+# 其实就是用二分法来找数字，但问题是他多了一个条件，他动过顺序
+# 所以要加上判定条件，就是要看出他怎么动的
+# 重点是要判断出这个数落在哪一边，所以我们先要找做出判断
+# 中位数是否大于最左边，如果是，再判断target是否在nums[left]和nums[mid]之间
+# 如果是，那么就就按正常二分法那么做，right = mid - 1；
+# 如果不是，那么说明target在 右半段，所以left = mid + 1；
+# 如果nums[left] > nums[mid]，那么意思就是转动的个数没有超过一半，这时候就判断
+# target是不是在右半边，也就是夹在mid 和 right中间
+# 如果是，那么left = mid + 1；
+# 如果不是， 那么right = mid - 1；

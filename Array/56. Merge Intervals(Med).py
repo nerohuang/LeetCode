@@ -16,18 +16,10 @@ class Solution:
 
         return merged
 
-#class Solution:
-#    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-#        if intervals == []:
-#            return []
-#        intervals.sort(key=lambda x: x[0])
-#        curr_low, curr_high = intervals[0]
-#        result = []
-#        for low, high in intervals[1:]:
-#            if low > curr_high:
-#                result.append([curr_low, curr_high])
-#                curr_low, curr_high = low, high
-#            else:
-#                curr_high = max(curr_high, high)
-#        result.append([curr_low, curr_high])
-#        return result
+# 思路：
+# 遍历即可：
+# 如果merged为空或者merged最后一组的后一位大于当前interval的前一位
+# merged[-1][1] < interval[0]:
+# 那么直接append interval
+# 如果不是，那么就对比merged最后一组的后一位和当前interval的后一位
+# merged[-1][1] = max(merged[-1][1], interval[1])

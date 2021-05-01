@@ -33,11 +33,35 @@ Dynamic Programming\357. Count Numbers with Unique Digits(Med).py
 Dynamic Programming\368. Largest Divisible Subset(Med).py
 思路对了，实现出了问题。
 
+
+
+Dynamic Programming\376. Wiggle Subsequence(Med).py
+维持两个list。
+
+
+Dynamic Programming\377. Combination Sum IV(Med).py
+建一个list然后在里面找sum就可以了。。
+
 Dynamic Programming\392. Is Subsequence(Easy).py
 我都不知道为啥我会实现的这么复杂。
 
+Dynamic Programming\413. Arithmetic Slices(Med).py
+等差数列
+
+Dynamic Programming\416. Partition Equal Subset Sum(Med).py
+
+Dynamic Programming\464. Can I Win(Med).py
+DFS
+
+Dynamic Programming\467. Unique Substrings in Wraparound String(Med).py
+substing 长度
+
+Dynamic Programming\474. Ones and Zeroes(Med).py
+**我丢，这啥。。
+其实是懂的推算公式这两个循环是怎么回事？
+
 Dynamic Programming\583. Delete Operation for Two Strings(Med).py
-最长公共子序列(longest Common Subsequence)
+最长公共子序列(longest Common Subsequence)**
 
 Dynamic Programming\1025. Divisor Game(Easy).py
 数学题，但下次用DP做

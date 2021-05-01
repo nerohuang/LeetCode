@@ -26,3 +26,11 @@ class Solution:
         
         postorder = postorder[::-1];
         return build(inorder);
+
+# 思路和105是一样的
+# 不过要先把postorder顺序换一下，因为
+# postorder 顺序是 lll rrrr m
+# 所以以postorder顺序调一下就是
+# m rrrr lll
+# 这样m就变回第一个了，不过同样的左右树也要换一下
+# 先后，因为左右树在上面那个调换的同时也一起调转了

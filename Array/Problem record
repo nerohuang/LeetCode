@@ -1,16 +1,45 @@
 Array\15. 3Sum(Med).py
 拆分，一个数和2sum的结合。
 
+Array\31. Next Permutation(Med).py
+字典序排序（上升）得方法**
+
+Array\33. Search in Rotated Sorted Array(Med).py
+Array\34. Find First and Last Position of Element in Sorted Array(Med).py
+Array\35. Search Insert Position(Easy).py
+二分法找数字*
+35是找最左和最右边的target **
+
+
 40. Combination Sum II(Med).py
 递归的演示！
 如何处理递归中数数组的问题new！
-防止重复new！
+防止重复new！<-很重要
+
+Array\48. Rotate Image(Med).py
+怎么转矩阵 **
+
+Array\55. Jump Game(Med).py
+Array\45. Jump Game II(Med).py
+跳楼梯最少步数 greedy **
+
+Array\53. Maximum Subarray(Easy).py
+最大subarray的和 **
+
+Array\56. Merge Intervals(Med).py
+Array\57. Insert Interval(Med).py
+数组，融合范围 **
+
+Array\75. Sort Colors(Med).py
+三种数字排序
 
 78. Subsets(Mid): 做是做出来了
+思路是
 Backtracking,  Lexicographic (Binary Sorted) Subsets
 https://leetcode.com/problems/subsets/solution/
 
 79. Word Search(Mid).py
+矩阵里面找单词
 
 120. Triangle **
 其实是个DP，有时候记得从后往前会简单很多。

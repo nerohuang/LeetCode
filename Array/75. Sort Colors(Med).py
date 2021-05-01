@@ -15,53 +15,28 @@ class Solution:
                 nums[blue], nums[white] = nums[white], nums[blue];
                 blue -= 1;
 
-
-#This is a dutch partitioning problem. We are classifying the array into four groups: red, white, unclassified, and blue. 
-#Initially we group all elements into unclassified. We iterate from the beginning as long as the white pointer is less than the blue pointer.
+# 思路：
+# 其实有很多种做法，不过思路都是通过一个指针来作为中心点然后再建立另外两个指针
+# 代表另外两种颜色
+# 这里以白色指针为行进，红色在最开头，因为红色在最左边，蓝色在最右边
+# 当白色和蓝色指针相重合的时候，就说明排序完了
+# 我们排序的目的是：
+# 0 - 红色指针 都是0
+# 红色指针 + 1 到 白色指针 都是 1
+# 白色指针 + 1 到 len(nums) - 1 都是2
+# 那白色指针会有三种情况：0，1，2
+# 1是最简单的，因为白色就是1，那自然啥都不用干，把白色指针完全移动一位扩大1的范围
+# 就可以了
+# 0的话说明他应该往前摆，那么就要和红色指针的位置交换，这样0就会去到该去的地方
+# 然后这时候就把红指针和白指针都往前移一位，为什么共同移一位，首先红指针为什么
+# 移动是很明确了，因为原来那个地方已经是0了，要扩大0的区间，所以往前挪
+# 那白色指针也要一并移动，这是为了那能够看到下一个数字是什么然后继续进行判断
+# 2的话说明他应该往后摆，所以和蓝色指针交换，交换后要扩大蓝色的区间所以蓝色指针
+# 减少1，但是此时白色不能动，因为交换后的白色指针对应的数字不知道是啥，所以要保
+# 留到下一次继续判断。
 #
-#If the white pointer is red (nums[white] == 0), we swap with the red pointer and move both white and red pointer forward. 
-#If the pointer is white (nums[white] == 1), the element is already in correct place, so we don't have to swap, just move the white pointer forward. 
-#If the white pointer is blue, we swap with the latest unclassified element.
-
-
-#four solution
-#// one pass in place solution
-#void sortColors(int A[], int n) {
-#    int n0 = -1, n1 = -1, n2 = -1;
-#    for (int i = 0; i < n; ++i) {
-#        if (A[i] == 0) 
-#        {
-#            A[++n2] = 2; A[++n1] = 1; A[++n0] = 0;
-#        }
-#        else if (A[i] == 1) 
-#        {
-#            A[++n2] = 2; A[++n1] = 1;
-#        }
-#        else if (A[i] == 2) 
-#        {
-#            A[++n2] = 2;
-#        }
-#    }
-#}
-#
-#// one pass in place solution
-#void sortColors(int A[], int n) {
-#    int j = 0, k = n - 1;
-#    for (int i = 0; i <= k; ++i){
-#        if (A[i] == 0 && i != j)
-#            swap(A[i--], A[j++]);
-#        else if (A[i] == 2 && i != k)
-#            swap(A[i--], A[k--]);
-#    }
-#}
-#
-#// one pass in place solution
-#void sortColors(int A[], int n) {
-#    int j = 0, k = n-1;
-#    for (int i=0; i <= k; i++) {
-#        if (A[i] == 0)
-#            swap(A[i], A[j++]);
-#        else if (A[i] == 2)
-#            swap(A[i--], A[k--]);
-#    }
-#}
+# 那为什么2的时候白色指针要保留继续判断但0的时候不用呢，因为红色指针之前的都是0，
+# 这是交换的来的，所以必定没错，那么红色指针那个位置可能是1或者2，因为如果是1的话
+# w白色指针开始会和红色指针错开，然后直到碰到下一个0才会交换，交换后排序是不会有
+# 错的，如果是2，那么就会执行等于2那个选项，那么白色指针就会一直到当前数字是0或者1
+# 才会前进，这样排序依旧不会错。

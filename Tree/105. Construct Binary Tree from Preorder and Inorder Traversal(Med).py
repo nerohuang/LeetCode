@@ -25,3 +25,11 @@ class Solution:
                 return newNode;
         
         return build(inorder);
+
+# 思路：
+# 其实看preorder和inorder的排序然后按照遍历顺序分开就行了：
+# preorder : m lllll rrrrrr
+# inorder: lllll m rrrrr
+# 所以我们每pop出一个preorder 的第一个数字，就能以他为中心
+# 在inorder处切割一左一右分别进去m node的左子树和右子树
+# 然后一直递归到空就可以了。
