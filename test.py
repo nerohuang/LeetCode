@@ -1,24 +1,18 @@
-candidates = [2,5,2,1,2]
-target = 5
+s1 = "aabcc"
+s2 = "dbbca"
+s3 = "aadbbcbcac"
 
-        ans = [];
-        candidates.sort();
 
-        def findSum(store, i, target):
-            if not target:
-                if store not in ans:
-                    ans.append(store);
-                return
+s1Index = 0;
+s2Index = 0;
+s3Index = 0;
 
-            
-            for j in range(i, len(candidates)):
-                if j > i and candidates[j] == candidates[j - 1]:
-                    continue;
-                if target >= candidates[j]:
-                    findSum(store + [candidates[j]], j + 1, target - candidates[j]);
-                else:
-                    break;
-            return
-
-        findSum([], -1, target);
-print(ans)
+while s1Index < len(s1) or s2Index < len(s2):
+    if s1Index < len(s1) and s1[s1Index] == s3[s3Index]:
+        s1Index += 1
+        s3Index += 1
+    elif s2Index < len(s2) and s2[s2Index] == s3[s3Index]:
+        s2Index += 1
+        s3Index += 1
+    else:
+        print(False)

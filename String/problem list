@@ -16,6 +16,7 @@ String\17. Letter Combinations of a Phone Number(Med).py
 
 String\22. Generate Parentheses(Med).py
 #递归，backtrack
+# 生成成对括弧 **
 
 String\93. Restore IP Addresses(Mewd).py
 DFS
@@ -46,6 +47,9 @@ Tree\814. Binary Tree Pruning(Med).py
 
 String\819. Most Common Word(Easy).js
 #这个结合dict找最大最小，正则表达，split之类的简单范例，看看。
+
+String\890. Find and Replace Pattern(Med).py
+有个方便一点的做法
 
 String\893. Groups of Special-Equivalent Strings(Easy).js
 思路:因为只能是奇数位和奇数位交换，偶数位和偶数位交换

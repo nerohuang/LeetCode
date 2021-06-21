@@ -15,16 +15,10 @@ class Solution:
                 result.append(num);
         return result + notInArr;
 
-##class Solution:
-##    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-##        result = []
-##        counter = collections.Counter(arr1)
-##        
-##        for num in arr2:
-##            if num in counter:
-##                result.extend([num] * counter[num])                
-##                del counter[num]
-##        other = []
-##        for num, freq in counter.items():
-##            other.extend([num] * freq)
-##        return result + sorted(other)
+#class Solution:
+#    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
+#        c = collections.Counter(arr1)
+#        res = []       
+#        for i in arr2:
+#            res += [i]*c.pop(i)  
+#        return res + sorted(c.elements())

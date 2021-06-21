@@ -6,24 +6,26 @@
 #            B[i] *= B[i - 1] or 1
 #        return max(A + B)
 #
-#It's actually a variant of Kadane's algorithm.
-#Detailed Explanation:
-#A lot of people asked about why can we get the max by calculating the products from start and end, Here is all you should know:
-#First, Consider there is no zero, and if we get the products of all the numbers:
-#1) We will have a negative result if there are odd numbers of negative -> max ((product of (0, last negative)), (product of (first negative, last num))
-#2) We will have a positive result if there are even numbers of negative -> product of all the numbers
-#Above all, we can get the max by going through the array from both start and end, then we won't miss any situations
-#If there is a zero, that means we would have two subproblems(unless the zero is at index 0 or last index), if two zeros, 3 subs, 
-#all the way up. We still can calculate from the very beginning and end at the same time, then we would get the result.
+# 这事一种思路，不太常见
+# 思路是进行两种累乘，一种是正向，一种是反向
+# 如果碰到0，那么就乘以1继续
+# 这种正反向是为了防止有奇数个负数
+# 因为负数可能会把最大值和最小值翻转，那么当有奇数个负数时，
+# 如果只是正向遍历的话，可能会出错，
+# 比如 [-1, -2, -3]，累加积会得到 -1，2，-6，看起来最大值只能为2，其实不对，
+# 而如果我们再反向来一遍，累加积为 -3，6，-6，就可以得到6了。所以当负数个数为奇数时，
+# 首次出现和末尾出现的负数就很重要，有可能会是最大积的组成数字，所以遍历两次就不会漏掉组成最大值的机会，
 
+#def maxProduct(self, nums: List[int]) -> int:
+#    curr_max = global_max = curr_min = nums[0]
+#    
+#    for i in range(1, len(nums)):
+#        curr_max, curr_min = max(nums[i], nums[i] * curr_max, nums[i] * curr_min), min(nums[i], nums[i] * curr_max, nums[i] * curr_min)
+#        global_max = max(global_max, curr_max)
+#
+#
+#    return global_max
 
-
-#class Solution:
-#    def maxProduct(self, nums):
-#        if len(nums) == 0:
-#            return 0
-#        maxx = minx = res = nums[0]
-#        for x in nums[1:]:
-#            maxx, minx = max(x, maxx*x, minx*x),min(x, maxx*x, minx*x)
-#            res = max(res, maxx)
-#        return res
+# 第二种方法：
+# 最大子数列问题，可以参考一下，然后就是要注意怎么处理0这个数了
+# https://www.cnblogs.com/grandyang/p/4028713.html

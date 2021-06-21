@@ -1,4 +1,11 @@
+
+Dynamic Programming\10. Regular Expression Matching(Hard).py
+# dp， 字符样式是否符合
+
 Dynamic Programming\91. Decode Ways(Med).py
+
+Dynamic Programming\97. Interleaving String(Med).py
+# dp，合法交错字符
 
 Dynamic Programming\131. Palindrome Partitioning(Med).py
 DFS
@@ -62,6 +69,9 @@ Dynamic Programming\474. Ones and Zeroes(Med).py
 
 Dynamic Programming\583. Delete Operation for Two Strings(Med).py
 最长公共子序列(longest Common Subsequence)**
+
+Dynamic Programming\871. Minimum Number of Refueling Stops(Hard).py
+# 加油站往前跑
 
 Dynamic Programming\1025. Divisor Game(Easy).py
 数学题，但下次用DP做

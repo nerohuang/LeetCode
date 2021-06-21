@@ -1,3 +1,6 @@
+Array\4. Median of Two Sorted Arrays(Hard).py
+两个有序数组里面binary search ****
+
 Array\15. 3Sum(Med).py
 拆分，一个数和2sum的结合。
 
@@ -16,6 +19,14 @@ Array\35. Search Insert Position(Easy).py
 如何处理递归中数数组的问题new！
 防止重复new！<-很重要
 
+Array\41. First Missing Positive(Hard).py
+脑筋急转弯？O（2n） = O（n） 
+找最小的不在给出数组的正数
+
+Array\42. Trapping Rain Water(Hard).py
+水池填坑
+two pointer
+
 Array\48. Rotate Image(Med).py
 怎么转矩阵 **
 
@@ -23,8 +34,11 @@ Array\55. Jump Game(Med).py
 Array\45. Jump Game II(Med).py
 跳楼梯最少步数 greedy **
 
+Array\746. Min Cost Climbing Stairs(Easy).py
+爬楼梯最少话费 **
+
 Array\53. Maximum Subarray(Easy).py
-最大subarray的和 **
+最大subarray的和 **<-老是记不住
 
 Array\56. Merge Intervals(Med).py
 Array\57. Insert Interval(Med).py
@@ -41,11 +55,20 @@ https://leetcode.com/problems/subsets/solution/
 79. Word Search(Mid).py
 矩阵里面找单词
 
-120. Triangle **
+120. Triangle **<-重点
 其实是个DP，有时候记得从后往前会简单很多。
 
-152. Maximum Product Subarray
+Array\121. Best Time to Buy and Sell Stock(Easy).py
+Array\122. Best Time to Buy and Sell Stock II(Easy).py
+贪心，高地价买股票（一次交易，n次交易）
 
+
+152. Maximum Product Subarray
+最大子数列问题
+
+
+Array\153. Find Minimum in Rotated Sorted Array(Med).py
+binary search变形，但没怎么变
 
 238. Product of Array Except Self(Med).py
 
@@ -54,6 +77,10 @@ https://leetcode.com/problems/subsets/solution/
 Approach 3: Floyd's Tortoise and Hare (Cycle Detection)
 
 289. Game of Life(Med).py
+
+Array\307. Range Sum Query - Mutable(Med).py
+处理长数组内加减的问题
+sqrt分组 **
 
 442. Find All Duplicates in an Array(Med).py
 
@@ -69,6 +96,7 @@ Approach 3: Floyd's Tortoise and Hare (Cycle Detection)
 做出来了，需要看看最优解
 
 695. Max Area of Island(Med).py
+用DFS做，求最大小岛的面积 **
 
 713. Subarray Product Less Than K(Med).py
 
@@ -77,11 +105,21 @@ Greed
 
 718. Maximum Length of Repeated Subarray(Med).py
 
+Array\729. My Calendar I(Med).py **
+# 做日历，不要有重复段
+# 用bisect快速定位来做
+
+
 769. Max Chunks To Make Sorted(Med).py
 
 775. Global and Local Inversions(Med).py
 
 746. Min Cost Climbing Stairs(Easy).py
+
+Array\795. Number of Subarrays with Bounded Maximum(Med).py
+用slide window做
+寻找最大值符合大于left 小于 right的subarray
+**看一下
 
 835. Image Overlap(Med).py
 

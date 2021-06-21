@@ -25,6 +25,12 @@ class MyCalendar:
 # return false:
 # end > 已有的start or start < 已有的end
 
+# 我们将维护一个日程安排列表（不一定要排序）。当且仅当其中一个日程
+# 安排在另一个日程安排结束后开始时，两个日程安排 [s1，e1) 和 [s2，e2) 
+# 不冲突：e1<=s2 或 e2<=s1。这意味着当 s1<e2 和 s2<e1 时，日程安排发生冲突。
+
+
+
 #class MyCalendar:
 #
 #    def __init__(self):

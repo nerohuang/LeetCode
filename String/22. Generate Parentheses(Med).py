@@ -15,9 +15,6 @@ class Solution:
                 builder(curAns + ")", left, right + 1);
         
         builder("", 0, 0);
-        
-        return ans;
-
 #思路:
 #用back track:
 #思路其实是因为括号一左一右，而且要保持成对，所以：
